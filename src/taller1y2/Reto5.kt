@@ -72,7 +72,7 @@ class Nequi {
                 if (montoRetiro != null && montoRetiro > 0.0 && montoRetiro <= saldo) {
                     saldo -= montoRetiro
                     println("Se ha generado un código de 6 dígitos para el retiro. Por favor, diríjase al cajero automático o punto Nequi más cercano.")
-                    println("Código de retiro: ${(0..1000).random()}")
+                    println("Código de retiro: ${(100000..999999).random()}")
                     println("Saldo disponible: $$saldo")
                 } else {
                     println("Monto inválido. Intente de nuevo.")
